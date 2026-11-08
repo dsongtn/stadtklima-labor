@@ -1,11 +1,74 @@
 <!doctype html>
-<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stadtklima – Wissensprojekt</title>
-<style>
-:root{font-family:Arial,Helvetica,sans-serif;color:#142e32;background:#f4f7f4}*{box-sizing:border-box}body{margin:0}main{max-width:960px;margin:auto;padding:40px 24px}header{padding:16px 24px;background:#17453f;color:white}header a{color:white;text-decoration:none;font-weight:bold}.hero{padding:50px 32px;background:#e2eee3;border-radius:20px;margin:28px 0}h1{font-size:clamp(2rem,6vw,3.7rem);line-height:1.1;margin:0 0 22px}p{line-height:1.75;max-width:65ch}.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tile{padding:24px;background:white;border-radius:14px;min-height:170px}footer{margin-top:30px;font-size:.87rem;color:#526462}@media(max-width:650px){.tiles{grid-template-columns:1fr}.hero{padding:36px 22px}}
-</style></head>
-<body><header><a href="./">Stadtklima-Labor</a></header><main>
-<section class="hero"><p>Ein wissenschaftliches Lernprojekt · Version 0.1</p><h1>Stadtklima verstehen</h1><p>Warum sich Städte an heißen Tagen anders anfühlen als ihr Umland: Gebäude und Straßen speichern Wärme, versiegelte Böden lassen weniger Wasser verdunsten und in dicht bebauten Vierteln fehlt oft Schatten. Besonders nachts kann die Luft in Städten vergleichsweise warm bleiben.</p></section>
-<div class="tiles"><section class="tile"><h2>Ursachen</h2><p>Versiegelung, Wärmespeicherung und eingeschränkte Verdunstung verändern die lokale Wärmebilanz.</p></section><section class="tile"><h2>Folgen</h2><p>Heiße Tage und warme Nächte belasten Aufenthalt und Erholung.</p></section><section class="tile"><h2>Ideen</h2><p>Stadtbäume, Schatten, Regenwasserspeicherung und Entsiegelung können helfen.</p></section></div>
-<footer><p>Fiktives, nicht kommerzielles Lehrprojekt. Keine Institution und keine eigenen Messdaten. Grundlage: <a href="https://www.umweltbundesamt.de/themen/klima-energie/klimafolgen-anpassung/folgen-des-klimawandels/klimafolgen-deutschland/klimafolgen-handlungsfeld-bauwesen">Umweltbundesamt</a>.</p></footer>
-</main></body></html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Städtische Wärmeinsel: Ursachen & Lösungen | Stadtklima-Labor</title>
+<meta name="description" content="Warum speichern Städte Wärme? Das Stadtklima-Labor erklärt städtische Wärmeinseln, warme Nächte und wirksame Maßnahmen wie Stadtbäume und Entsiegelung.">
+<link rel="canonical" href="https://dsongtn.github.io/stadtklima-labor/">
+<link rel="stylesheet" href="assets/site.css">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Städtische Wärmeinseln verstehen | Stadtklima-Labor">
+<meta property="og:description" content="Ein wissenschaftlich fundierter Einstieg in urbane Hitze und klimaangepasste Stadtplanung.">
+<meta property="og:url" content="https://dsongtn.github.io/stadtklima-labor/">
+<meta name="theme-color" content="#0e302c">
+</head>
+<body>
+<a class="skip" href="#inhalt">Direkt zum Inhalt</a>
+<header class="site-head"><div class="container head-inner">
+<a class="brand" href="./" aria-label="Stadtklima-Labor – Startseite"><span class="brand-mark" aria-hidden="true">S</span><span>Stadtklima-Labor<span class="brand-sub">Wissen für kühlere Städte</span></span></a>
+<nav class="site-nav" aria-label="Hauptnavigation"><a href="./" aria-current="page">Wärmeinseln</a><a href="massnahmen.html">Gegenmaßnahmen</a><a href="quellen.html">Quellen &amp; Methode</a></nav>
+</div></header>
+<main id="inhalt">
+<section class="hero" aria-labelledby="hero-title"><div class="container hero-grid">
+<div><span class="eyebrow">Stadtklima verständlich erklärt</span>
+<h1 id="hero-title">Warum Städte <em>nachts</em> nicht abkühlen.</h1>
+<p class="hero-copy">Straßen und Gebäude speichern tagsüber Energie. Wenn Schatten, Vegetation und Verdunstung fehlen, bleibt die Luft in dicht bebauten Quartieren oft auch nach Sonnenuntergang wärmer als im Umland. Das nennt sich <strong>städtische Wärmeinsel</strong>.</p>
+<div class="actions"><a class="action primary" href="#ursachen">Ursachen verstehen <span aria-hidden="true">↘</span></a><a class="action secondary" href="massnahmen.html">Maßnahmen entdecken <span aria-hidden="true">→</span></a></div>
+</div>
+<figure class="figure">
+<svg viewBox="0 0 490 320" role="img" aria-labelledby="heat-title heat-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="heat-title">Schematische Darstellung einer städtischen Wärmeinsel</title>
+<desc id="heat-desc">Eine Stadt mit hohen Gebäuden und versiegelten Flächen unter orangefarbenem Wärmeschein; daneben ein grüner Stadtrand mit Bäumen. Pfeile zeigen tagsüber aufgenommene und nachts abgegebene Wärme.</desc>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#315f52"/><stop offset="1" stop-color="#1c4c42"/></linearGradient><linearGradient id="heat" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f5b063" stop-opacity=".5"/><stop offset="1" stop-color="#ef8853" stop-opacity=".08"/></linearGradient></defs>
+<rect x="3" y="3" width="484" height="304" rx="15" fill="url(#sky)"/>
+<circle cx="246" cy="74" r="26" fill="#e6d6a6" opacity=".93"/><path d="M30 249H459" stroke="#c7d6b7" stroke-width="2"/>
+<ellipse cx="202" cy="210" rx="190" ry="118" fill="url(#heat)"/>
+<path d="M60 250V160h48v90M113 250V113h62v137M183 250V139h62v111M253 250V93h67v157M325 250V169h39v81" fill="#24423e" stroke="#b0cbbb" stroke-width="2"/>
+<g fill="#f6c58d" opacity=".7"><rect x="75" y="180" width="10" height="10"/><rect x="90" y="180" width="9" height="10"/><rect x="128" y="134" width="10" height="11"/><rect x="149" y="134" width="10" height="11"/><rect x="128" y="156" width="10" height="11"/><rect x="149" y="156" width="10" height="11"/><rect x="197" y="165" width="11" height="11"/><rect x="217" y="165" width="11" height="11"/><rect x="269" y="110" width="12" height="11"/><rect x="292" y="110" width="12" height="11"/><rect x="269" y="133" width="12" height="11"/><rect x="292" y="133" width="12" height="11"/></g>
+<g><path d="M365 250v-61M410 250v-78M443 250v-51" stroke="#d9d8a5" stroke-width="5"/><circle cx="365" cy="177" r="25" fill="#a9cf9f"/><circle cx="409" cy="165" r="33" fill="#8ab98c"/><circle cx="443" cy="190" r="25" fill="#b7d5a0"/></g>
+<path d="M125 91q-19-18-1-35M170 92q-20-25 0-44M218 106q-16-23 0-43" fill="none" stroke="#f0af76" stroke-linecap="round" stroke-width="4"/>
+<text x="138" y="280" fill="#ffe0a8" font-size="16" text-anchor="middle" font-family="system-ui">Dicht bebaute Stadt</text>
+<text x="397" y="280" fill="#e4f0ce" font-size="16" text-anchor="middle" font-family="system-ui">Grünes Umland</text>
+</svg>
+<figcaption>Schematische Illustration – keine Messgrafik und keine standortspezifische Prognose.</figcaption>
+</figure>
+</div></section>
+<section class="section" id="ursachen"><div class="container">
+<div class="section-intro"><span class="kicker">01 / Grundprinzip</span><h2>Was verursacht eine städtische Wärmeinsel?</h2><p>Der Unterschied entsteht aus dem Zusammenspiel von Bebauung, Oberflächen, Wasserhaushalt und Luftbewegung. Er variiert mit Wetterlage, Tageszeit und Stadtstruktur.</p></div>
+<div class="cards">
+<article class="card"><span class="number" aria-hidden="true">01</span><h3>Stein speichert Wärme</h3><p>Asphalt und Gebäude nehmen tagsüber Sonnenenergie auf und geben sie zeitversetzt wieder ab. Dadurch kühlt die bebaute Umgebung abends oft langsamer aus.</p><a href="quellen.html#dwd">Wissenschaftlicher Hintergrund →</a></article>
+<article class="card"><span class="number" aria-hidden="true">02</span><h3>Zu wenig Verdunstung</h3><p>Versiegelte Flächen lassen Niederschlag schneller abfließen. Feuchte Böden und Vegetation stehen für Verdunstungskühlung dann seltener zur Verfügung.</p><a href="massnahmen.html#entsiegelung">Entsiegelung erklären →</a></article>
+<article class="card"><span class="number" aria-hidden="true">03</span><h3>Wenig Schatten &amp; Luftaustausch</h3><p>Fehlende Baumkronen erhöhen die direkte Strahlungsbelastung. Enge Bebauung kann Windströme verändern und die Abgabe gespeicherter Wärme beeinflussen.</p><a href="massnahmen.html#baeume">Baumwirkung verstehen →</a></article>
+</div></div></section>
+<section class="section alt"><div class="container measure-grid">
+<div class="measure-copy"><span class="eyebrow">Einordnung statt Pauschalwert</span><h3>1–3 Kelvin</h3><p>So beschreibt der Deutsche Wetterdienst in einer Informationsbroschüre eine typische mittlere Lufttemperaturdifferenz zwischen Stadt und Umland. In einzelnen Nächten kann sie wesentlich höher ausfallen.</p><small>Temperaturunterschied: 1 K entspricht einer Differenz von 1 °C. Die Werte sind keine Messung dieses Lehrprojekts. <a href="quellen.html#dwd">Quelle: DWD</a>.</small></div>
+<div><span class="kicker">02 / Wann tritt es auf?</span><h2>Vor allem die Nächte sind entscheidend.</h2><p>Bei wolkenarmen und windschwachen Bedingungen ist der Wärmeinseleffekt nachts oft besonders ausgeprägt. Am Tag kann dagegen die direkte Sonnenstrahlung auf Menschen und Oberflächen lokal die größere Belastung darstellen.</p><p>Deshalb sollte Stadtplanung sowohl <strong>Lufttemperatur</strong> als auch <strong>Strahlung, Schatten und Aufenthaltsqualität</strong> berücksichtigen.</p><a class="inline-link" href="massnahmen.html">Welche Maßnahmen passen zu welchem Problem? →</a></div>
+</div></section>
+<section class="section"><div class="container">
+<div class="section-intro"><span class="kicker">03 / Handlungsfelder</span><h2>Wie lassen sich Quartiere abkühlen?</h2><p>Einzelmaßnahmen sind hilfreich, aber Wirkung und Priorität hängen vom Standort ab. Besonders wirksam sind Kombinationen, die Schatten, Wasser und den Boden berücksichtigen.</p></div>
+<ul class="measures"><li><strong>Stadtbäume:</strong> Verschattung und Verdunstung verbessern das Mikroklima – bei ausreichend Wasser und Wurzelraum.</li><li><strong>Entsiegelung:</strong> Durchlässige und bepflanzte Flächen ermöglichen Versickerung und Verdunstung.</li><li><strong>Schwammstadt:</strong> Regenwasser vor Ort zurückhalten, statt es möglichst schnell abzuleiten.</li><li><strong>Gebäude:</strong> Dach- und Fassadenbegrünung sowie sinnvoller sommerlicher Sonnenschutz ergänzen den Außenraum.</li></ul>
+<p><a class="action primary" href="massnahmen.html">Maßnahmen mit Grenzen vergleichen →</a></p>
+</div></section>
+<section class="section alt"><div class="container prose">
+<span class="kicker">Häufig gefragt</span><h2>Fragen zur städtischen Wärmeinsel</h2>
+<details><summary>Warum ist die Stadt nachts oft wärmer als das Umland?</summary><p>Bauwerke und versiegelte Oberflächen speichern Wärme. In städtischen Räumen wird sie nachts langsamer abgegeben; zugleich wirken sich fehlende Vegetation und veränderte Luftbewegung aus.</p></details>
+<details><summary>Reicht es aus, Dächer weiß zu streichen?</summary><p>Helle Oberflächen können weniger Strahlungsenergie aufnehmen. Ihre Wirkung hängt jedoch vom Material, der Umgebung und möglichen Reflexionen auf Passanten ab. Sie ersetzen nicht Verschattung oder Wassermanagement.</p></details>
+<details><summary>Kann ein kleiner Park ein ganzes Stadtviertel kühlen?</summary><p>Grünflächen können lokal das Mikroklima verbessern. Größe, Vegetation, Wind, Bewässerung und Lage beeinflussen, ob und wie weit der Effekt reicht. Pauschale Aussagen zur Kühlreichweite sind unzuverlässig.</p></details>
+<div class="note"><strong>Transparenz:</strong> Das Stadtklima-Labor ist ein fiktives Lehrprojekt zur verständlichen Wissenschaftskommunikation und SEO. Es gibt keine eigene Wetterstation, Forschungseinrichtung oder kommerziellen Auftraggeber. <a href="quellen.html">Methodik und Primärquellen</a>.</div>
+</div></section>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><h2>Stadtklima-Labor</h2><p>Ein unabhängiges, fiktives Lehrprojekt. Sachliche Inhalte basieren auf Veröffentlichungen von DWD und Umweltbundesamt; es werden keine eigenen Temperaturdaten behauptet.</p></div><nav class="footer-links" aria-label="Fußnavigation"><a href="./">Start</a><a href="massnahmen.html">Maßnahmen</a><a href="quellen.html">Quellen</a><a href="https://github.com/dsongtn/stadtklima-labor">Quellcode</a></nav></div></footer>
+</body>
+</html>
